@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/lib/index.js",
+  "main": "dist/lib/bad-behavior.js",
   "typings": "dist/types/bad-behavior.d.ts",
   "files": [
     "dist"

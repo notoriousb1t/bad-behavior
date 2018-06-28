@@ -3,7 +3,7 @@
 Super-tiny observable.  That's literally all it is.
 
 [![npm version](https://badge.fury.io/js/bad-behavior.svg)](https://badge.fury.io/js/bad-behavior) 
-[![gzip size](http://img.badgesize.io/https://unpkg.com/bad-behavior/dist/bad-behavior.min.js?compression=gzip&label=gzip%20size&style=flat&cache=false)](https://unpkg.com/notoriousb1t/dist/bad-behavior.min.js) 
+[![gzip size](http://img.badgesize.io/https://unpkg.com/bad-behavior@0.0.0/dist/cdn/bad-behavior.min.js?compression=gzip&label=gzip%20size&style=flat&cache=false)](https://unpkg.com/notoriousb1t/dist/bad-behavior.min.js) 
  
 ## Why should I use this?
 
