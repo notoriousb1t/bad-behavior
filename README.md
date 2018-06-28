@@ -39,6 +39,12 @@ I kept reusing this piece of code to build animation libraries, especially when 
 npm i -S bad-behavior
 ```
 
+OR 
+
+```html
+<script src="https://unpkg.com/bad-behavior/dist/cdn/bad-behavior.min.js"></script>
+```
+
 
 ## License
 
