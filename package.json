@@ -1,6 +1,6 @@
 {
   "name": "bad-behavior",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "dist/lib/bad-behavior.js",
@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "@types/jest": "^22.0.0",
-    "@types/node": "^10.0.3", 
+    "@types/node": "^10.0.3",
     "colors": "^1.1.2",
     "commitizen": "^2.9.6",
     "coveralls": "^3.0.0",
@@ -82,8 +82,8 @@
     "rimraf": "^2.6.1",
     "rollup": "^0.58.0",
     "rollup-plugin-commonjs": "^9.0.0",
-    "rollup-plugin-filesize": "^2.0.0", 
-    "rollup-plugin-node-resolve": "^3.0.0", 
+    "rollup-plugin-filesize": "^2.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-typescript2": "^0.11.1",
     "rollup-plugin-uglify": "^4.0.0",
     "semantic-release": "^15.0.0",
