@@ -57,4 +57,19 @@ describe('BadBehavior', () => {
     obs.next(3)
     expect(out).toEqual(3)
   })
+
+  it('supports nested next() calls', () => {
+    const obs = BadBehavior<number>()
+
+    let out
+    obs.subscribe(s => {
+      if (s) {
+        obs.next(--s)
+      } else {
+        out = s
+      }
+    })
+    obs.next(10)
+    expect(out).toEqual(0)
+  })
 })
