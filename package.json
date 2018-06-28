@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/bad-behavior.umd.js",
-  "module": "dist/bad-behavior.es5.js",
+  "main": "dist/lib/index.js",
   "typings": "dist/types/bad-behavior.d.ts",
   "files": [
     "dist"
@@ -12,7 +11,10 @@
   "author": "Christopher Wallis <christopher.j.wallis@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/notoriousb1t/bad-behavior"
+  },
+  "bugs": {
+    "url": "https://github.com/notoriousb1t/bad-behavior/issues"
   },
   "license": "MIT",
   "engines": {
@@ -21,11 +23,11 @@
   "scripts": {
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
-    "start": "rollup -c rollup.config.ts -w",
+    "build": "tsc --module commonjs && rollup -c config/rollup.uncompressed.js && rollup -c config/rollup.compressed.js",
+    "start": "rollup -c config/rollup.compressed.js -w",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:prod": "npm run lint && npm run test",  
+    "test:prod": "npm run lint && npm run test",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
@@ -63,7 +65,7 @@
   },
   "devDependencies": {
     "@types/jest": "^22.0.0",
-    "@types/node": "^10.0.3",
+    "@types/node": "^10.0.3", 
     "colors": "^1.1.2",
     "commitizen": "^2.9.6",
     "coveralls": "^3.0.0",
@@ -72,24 +74,24 @@
     "husky": "^0.14.0",
     "jest": "^22.0.2",
     "lint-staged": "^7.0.0",
-    "lodash.camelcase": "^4.3.0",
     "prettier": "^1.4.4",
     "prompt": "^1.0.0",
     "replace-in-file": "^3.0.0-beta.2",
     "rimraf": "^2.6.1",
     "rollup": "^0.58.0",
     "rollup-plugin-commonjs": "^9.0.0",
-    "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-filesize": "^2.0.0", 
+    "rollup-plugin-node-resolve": "^3.0.0", 
     "rollup-plugin-typescript2": "^0.11.1",
+    "rollup-plugin-uglify": "^4.0.0",
     "semantic-release": "^15.0.0",
     "ts-jest": "^22.0.0",
     "ts-node": "^6.0.0",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.1.0",
-    "tslint-config-standard": "^7.0.0", 
+    "tslint-config-standard": "^7.0.0",
     "typescript": "^2.6.2",
+    "uglify-js": "^3.4.2",
     "validate-commit-msg": "^2.12.2"
   }
 }

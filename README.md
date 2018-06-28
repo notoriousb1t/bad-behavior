@@ -1,10 +1,13 @@
 # Bad Behavior
 
 Super-tiny observable.  That's literally all it is.
+
+[![npm version](https://badge.fury.io/js/bad-behavior.svg)](https://badge.fury.io/js/bad-behavior) 
+[![gzip size](http://img.badgesize.io/https://unpkg.com/bad-behavior/dist/bad-behavior.min.js?compression=gzip&label=gzip%20size&style=flat&cache=false)](https://unpkg.com/notoriousb1t/dist/bad-behavior.min.js) 
  
 ## Why should I use this?
 
-Sometimes RxJS feels like overkill. It is a wonderful library, but sometimes you need a little bit of reactivity, not a whole system of reactivity.  This library is an approximation of the ```BehaviorSubject```, one of the most useful Observables out there.  In truth, bad-behavior is nothing more than a fancy multi-cast event emitter.
+Sometimes RxJs feels like overkill. It is a wonderful library, but sometimes you need a little bit of reactivity, not a whole system of reactivity.  This library is an approximation of the ```BehaviorSubject```, one of the most useful Observables out there.  In truth, bad-behavior is nothing more than a fancy multi-cast event emitter.
 
 ## How do I use it?
 
