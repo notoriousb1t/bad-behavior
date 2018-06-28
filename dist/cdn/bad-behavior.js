@@ -3,20 +3,21 @@ var BadBehavior = (function () {
 
   function BadBehavior() {
       var buffer = [];
+      var counter = 0;
       var subs = [];
       return {
           next: function (n) {
               if (subs.length) {
-                  if (!buffer.length) {
+                  if (counter++) {
+                      buffer.push(n);
+                  }
+                  else {
                       do {
                           subs.forEach(function (s) {
                               s(n);
                           });
                           n = buffer.shift();
-                      } while (n != null);
-                  }
-                  else {
-                      buffer.push(n);
+                      } while (--counter);
                   }
               }
           },
